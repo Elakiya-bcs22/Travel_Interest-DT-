@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>🌍 Travel Destination Predictor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('https://www.transparenttextures.com/patterns/cars.png'); /* Vehicle doodle background */
+            background-repeat: repeat;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1c5980;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #dff9fb;
+            color: #130f40;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>🧳 Travel Destination Predictor</h2>
+        <form method="POST">
+            <label for="age">🎂 Age:</label>
+            <input type="number" name="age" id="age" required>
+
+            <label for="gender">🚻 Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <label for="travel_type">✈️ Travel Type:</label>
+            <select name="travel_type" id="travel_type" required>
+                <option value="Adventure">Adventure</option>
+                <option value="Relaxation">Relaxation</option>
+                <option value="Cultural">Cultural</option>
+            </select>
+
+            <button type="submit">🌐 Predict Destination</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            🏖️ Recommended Destination: <strong>{{ prediction }}</strong>
+        </div>
+        {% endif %}
+    </div>
+</body>
+
+</html>
+
