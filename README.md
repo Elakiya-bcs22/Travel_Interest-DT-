@@ -42,7 +42,7 @@ Project Structure:
 └── README.md                 
 
 Results & Insights:
-Early experiments show that the Decision Tree achieved strong classification performance, with accuracy in the range of X–Y% (please include your actual results).
+Early experiments show that the Decision Tree achieved strong classification performance, with accuracy in the range of X–Y% .
 Its interpretability also allows you to trace decisions—for example, whether budget or preferred activity was the decisive factor in a prediction—making it highly useful for analysis and optimization.
 
 Future Enhancements:
