@@ -37,8 +37,7 @@ Project Structure:
 ├── travel_model.pkl          
 ├── destination_map.pkl       
 ├── travel_type_map.pkl      
-├── templates/
-|── index.html           
+├── templates-index.html           
 ├── requirements.txt          
 └── README.md                 
 
