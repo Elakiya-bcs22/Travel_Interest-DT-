@@ -1,4 +1,5 @@
 Travel Interest Prediction – Decision Tree
+
 Overview:
 This project aims to predict users’ travel interests—such as Culture, Adventure, Beach, and Wildlife—based on their demographic profile and personal preferences. 
 By leveraging a Decision Tree Classifier, the project transforms raw data into accurate predictions while offering interpretability and ease of use.
