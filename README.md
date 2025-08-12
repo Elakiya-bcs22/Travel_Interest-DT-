@@ -30,6 +30,7 @@ Evaluation: Assessing performance using accuracy, precision, recall, and F1-scor
 Serialization: Saving the model (travel_model.pkl) and necessary mapping files (destination_map.pkl, travel_type_map.pkl) for deployment.
 
 Project Structure:
+
 ├── app.py                    
 ├── Train.py                  
 ├── Travel_Interest.csv       
@@ -37,6 +38,7 @@ Project Structure:
 ├── destination_map.pkl       
 ├── travel_type_map.pkl      
 ├── templates/
+
 │   └── index.html           
 ├── requirements.txt          
 └── README.md                 
